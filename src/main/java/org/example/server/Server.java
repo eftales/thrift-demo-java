@@ -8,6 +8,7 @@ import org.apache.thrift.transport.TServerTransport;
 import org.apache.thrift.transport.TTransportFactory;
 import org.example.thrift.ConService;
 
+
 /**
  * Created by huyanshi on 2019/03/28.
  */
