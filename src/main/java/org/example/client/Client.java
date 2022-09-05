@@ -26,7 +26,10 @@ public class Client {
             System.out.println(client.setCMode((byte) 1));
             System.out.println(client.fetchFlowData());
             System.out.println(client.fetchNetEvent());
-            System.out.println(client.addMACAuthDevice("0x112233445566","0x000001")); // 现在必须是 0x112233445566 这种格式，之后会更改为 11:22:33:11:22:33
+            System.out.println(client.addMACAuthDevice("11:22:33:11:22:33","0x000001"));
+            System.out.println(client.getMACWhitelist());
+            System.out.println(client.getMACAuthDevices());
+
         } catch (TTransportException e) {
             e.printStackTrace();
         } catch (TException e) {

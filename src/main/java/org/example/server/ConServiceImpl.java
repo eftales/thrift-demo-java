@@ -7,6 +7,7 @@ import org.example.thrift.SafeParamThrift;
 
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,6 +28,26 @@ public class ConServiceImpl implements ConService.Iface {
 
     @Override
     public Map<String, SafeParamThrift> getSafeParam() throws TException {
+        return null;
+    }
+
+    @Override
+    public int getRandNumLoopDelay() throws TException {
+        return 0;
+    }
+
+    @Override
+    public byte getRandNumDelay() throws TException {
+        return 0;
+    }
+
+    @Override
+    public List<String> getMACAuthDevices() throws TException {
+        return null;
+    }
+
+    @Override
+    public Map<String, List<String>> getMACWhitelist() throws TException {
         return null;
     }
 
